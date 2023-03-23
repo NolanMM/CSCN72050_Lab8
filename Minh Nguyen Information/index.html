@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width = device - width, initial-scale=1.0" />
+  <title>Minh Nguyen's Lab 8 Main Page</title>
+  <link rel="stylesheet" href="/Minh Nguyen Information/style.css" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <script src="https://kit.fontawesome.com/0a912261c7.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap"
+    rel="stylesheet" />
+  <link href="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css
+" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- NavBar Section -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="/Minh Nguyen Information/index.html" id="navbar__logo"><img
+          src="/Minh Nguyen Information/Images/Conestoga/conestoga-logo.jpg" alt="" class="" /></a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"> </span>
+
+        <span class="bar"> </span>
+
+        <span class="bar"> </span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="/" class="navbar__links" id="active">Home</a>
+        </li>
+
+        <li class="navbar__item">
+          <a href="/Minh Nguyen Information//Profile.html" class="navbar__links">Minh Nguyen's Profile</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="hero_section">
+    <img src="/Minh Nguyen Information/Images/Conestoga/image.png" alt="" class="" />
+    <button type="submit" onclick="Quote_btn_click();">Minh's Quote</button>
+  </div>
+  <script src=" https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
+  <script type="text/javascript">
+    function Quote_btn_click() {
+      Swal.fire({
+        title: '<h1 style="font-size:3rem; height: 5vh; color:black;font-weight:700;"><strong>My Fav Quote</strong></h1>',
+        html:
+          '<div style=""><h1 style="font-size:9rem; height: 25vh; color:#bf9b66da;font-weight:700;">Win or Die Trying</h1></div>',
+        confirmButtonColor: '#131313',
+        confirmButtonText: 'Good Luck!!!',
+        showCloseButton: true,
+        imageUrl: '/Minh Nguyen Information/Images/Conestoga/Hero_Half.png',
+        imageWidth: 702,
+        imageHeight: 300,
+        imageAlt: 'Custom image',
+        width: 1600,
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        }
+      })
+    }
+  </script>
+
+  <!--  -->
+
+  <div class="intro">
+    <div class="intro-text">
+      <h1 class="hide">
+        <span class="text">Greeting Everyone,</span>
+      </h1>
+      <h1 class="hide">
+        <span class="text">Welcome to </span>
+      </h1>
+      <h1 class="hide">
+        <span class="text">Minh Nguyen's Webpage</span>
+      </h1>
+    </div>
+  </div>
+  <div class="slider"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+    integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+    crossorigin="anonymous"></script>
+  <!--  -->
+
+  <script src="/Minh Nguyen Information/myquote.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
